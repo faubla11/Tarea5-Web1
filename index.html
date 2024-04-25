@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarea 5</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/34cf304f66.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="overlay-reg" class="overlay-reg active">
+      <!-- contenedor total de la pagina -->
+      <div id="container-reg" class="container-reg active">
+        <!-- contenedor del formmulario -->
+        <a id="close-reg" class="close-reg"><i class="fas fa-times"></i></a>
+        <h3>Regístrate</h3>
+        <p class="warning" id="warning"></p>
+        <form action="" id="form">
+          <!-- contenedor de las 2 columnas del formulario -->
+          <div class="inputs-reg">
+            <!-- columna 1 del formulario -->
+            <div class="colum1">
+              <label for="names">Nombres:</label>
+              <input id="names" type="text" name="names" />
+              <label for="mail-reg">Correo Electrónico:</label>
+              <input id="mail-reg" type="text" name="mail-reg" />
+              <label for="password">Contraseña:</label>
+              <input
+                id="password"
+                type="password"
+                name="password"
+                minlength="8"
+              />
+            </div>
+            <!-- columna 2 de formulario -->
+            <div class="colum2">
+              <label for="lasts">Apellidos:</label>
+              <input id="lasts" type="text" class="lasts" name="lasts" />
+              <label for="cell">Teléfono:</label>
+              <input
+                id="cell"
+                type="text"
+                name="cell"
+                maxlength="10"
+                minlength="9"
+                required
+              />
+              <label for="c-password">Confirmar Contraseña:</label>
+              <input id="c-password" type="password" name="c-password" />
+              <button
+                type="submit"
+                id="btnEnviar"
+                class="btn-register"
+                disabled
+              >
+                Registrarme
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
